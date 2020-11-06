@@ -1,0 +1,20 @@
+{
+	"name": "almeida/acf-cleaner",
+	"description": "Clean ACF Fields",
+	"type": "project",
+	"license": "GPL2",
+	"authors": [
+		{
+			"name": "Rafael Almeida",
+			"email": "ratinho94adrs@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"acfc\\": "./include",
+			"api\\": "./include/api",
+			"admin\\": "./include/admin"
+		}
+	},
+	"require": {}
+}
