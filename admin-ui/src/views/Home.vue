@@ -1,18 +1,39 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1
+      class="text-center text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:leading-9 sm:truncate"
+    >
+      Unused ACF Fields
+    </h1>
+    <div v-if="error">
+      Error
+    </div>
+    <Suspense v-else>
+      <template #default>
+        <FieldList />
+      </template>
+      <template #fallback>
+        <div>Loading ACFs</div>
+      </template>
+    </Suspense>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import FieldList from '@/components/FieldList.vue'
+import { onErrorCaptured, ref } from 'vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    FieldList
   },
-};
+  setup () {
+    const error = ref(null)
+
+    onErrorCaptured((e) => {
+      error.value = e
+    })
+  }
+}
 </script>

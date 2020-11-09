@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es2016",
+		"jsx": "preserve",
+		"baseUrl": ".",
+		"paths": {
+			"@/*": [
+				"./src/*"
+			],
+		},
+		"sourceMap": true
+	},
+	"exclude": [
+		"node_modules",
+		"**/node_modules/*",
+		"dist"
+	]
+}

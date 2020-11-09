@@ -12,3 +12,5 @@
 require_once('vendor/autoload.php');
 
 add_action('admin_menu', ['\\admin\\menu', 'acf_cleaner_page']);
+
+api\register::hooks();
