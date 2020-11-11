@@ -6,5 +6,6 @@
 		"javascript",
 		"javascriptreact",
 		"vue"
-	]
+	],
+	"vetur.validation.template": false
 }

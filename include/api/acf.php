@@ -32,7 +32,7 @@ class acf
 		$ids = $_REQUEST['ids'];
 
 		if (empty($ids)) {
-			wp_send_json("Invalid Ids", 500);
+			wp_send_json_error("Invalid Ids");
 		}
 
 		global $wpdb;
