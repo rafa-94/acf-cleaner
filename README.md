@@ -1,6 +1,9 @@
 # acf-cleaner
 
-This was quickly put together. Feel free to fork it and modify it 😊😊
+This will help you clean leftovers from [ACF Plugin](https://www.advancedcustomfields.com).
+
+!!! This was quickly put together, use it with caution when deleting fields !!!<br/>
+Feel free to fork it and modify it. 😊😊
 
 ## How to use
 
