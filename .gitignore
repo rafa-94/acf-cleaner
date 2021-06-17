@@ -10,6 +10,7 @@ composer.phar
 # composer.lock
 
 ### vscode ###
+.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
