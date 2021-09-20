@@ -8,21 +8,21 @@
 		"lint": "vue-cli-service lint"
 	},
 	"dependencies": {
-		"axios": "^0.21.0",
+		"axios": "^0.21.4",
 		"core-js": "^3.6.5",
-		"tailwindcss": "^1.9.6",
-		"vue": "^3.0.0",
-		"vue-router": "^4.0.0-0"
+		"tailwindcss": "^2.2.15",
+		"vue": "^3.2.12",
+		"vue-router": "^4.0.11"
 	},
 	"devDependencies": {
-		"@vue/cli-plugin-babel": "~4.5.0",
-		"@vue/cli-plugin-eslint": "~4.5.0",
-		"@vue/cli-plugin-router": "~4.5.0",
-		"@vue/cli-service": "~4.5.0",
-		"@vue/compiler-sfc": "^3.0.0",
+		"@vue/cli-plugin-babel": "~4.5.13",
+		"@vue/cli-plugin-eslint": "~4.5.13",
+		"@vue/cli-plugin-router": "~4.5.13",
+		"@vue/cli-service": "~4.5.13",
+		"@vue/compiler-sfc": "^3.2.12",
 		"babel-eslint": "^10.1.0",
-		"eslint": "^6.7.2",
-		"eslint-plugin-vue": "^7.0.0-0",
+		"eslint": "^6.8.0",
+		"eslint-plugin-vue": "^7.18.0",
 		"webpack-manifest-plugin": "^2.2.0"
 	},
 	"eslintConfig": {
