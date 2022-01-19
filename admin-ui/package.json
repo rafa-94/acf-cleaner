@@ -1,47 +1,22 @@
 {
-	"name": "admin-ui",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"serve": "vue-cli-service serve",
-		"build": "vue-cli-service build",
-		"lint": "vue-cli-service lint"
-	},
-	"dependencies": {
-		"axios": "^0.21.4",
-		"core-js": "^3.6.5",
-		"tailwindcss": "^2.2.15",
-		"vue": "^3.2.12",
-		"vue-router": "^4.0.11"
-	},
-	"devDependencies": {
-		"@vue/cli-plugin-babel": "~4.5.13",
-		"@vue/cli-plugin-eslint": "~4.5.13",
-		"@vue/cli-plugin-router": "~4.5.13",
-		"@vue/cli-service": "~4.5.13",
-		"@vue/compiler-sfc": "^3.2.12",
-		"babel-eslint": "^10.1.0",
-		"eslint": "^6.8.0",
-		"eslint-plugin-vue": "^7.18.0",
-		"webpack-manifest-plugin": "^2.2.0"
-	},
-	"eslintConfig": {
-		"root": true,
-		"env": {
-			"node": true
-		},
-		"extends": [
-			"plugin:vue/vue3-essential",
-			"eslint:recommended"
-		],
-		"parserOptions": {
-			"parser": "babel-eslint"
-		},
-		"rules": {}
-	},
-	"browserslist": [
-		"> 1%",
-		"last 2 versions",
-		"not dead"
-	]
+  "name": "admin-ui",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "qs": "^6.10.3",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.0.0",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.15",
+    "vite": "^2.7.2"
+  }
 }

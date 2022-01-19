@@ -78,13 +78,13 @@ class acf
 		];
 	}
 
-	private static function get_unused_acf($table = 'wp_postmeta')
+	private static function get_unused_acf($table = 'wp_postmeta', $limit = 50)
 	{
 		return "SELECT post_id, SUBSTR(meta_key, 2) AS meta_key FROM $table
 							LEFT JOIN wp_posts ON $table.meta_value = wp_posts.post_name
 							WHERE LEFT(meta_value, 6) = 'field_'
 							AND wp_posts.post_name IS null
-							ORDER BY post_id ASC;";
+							ORDER BY post_id ASC LIMIT $limit;";
 	}
 
 	private static function get_unused_meta_id($meta_data)

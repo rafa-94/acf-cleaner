@@ -18,11 +18,13 @@ class assets
 		return new self;
 	}
 
-	public static function asset($file, $url = false )
+	public static function asset($file, $asset, $url = false )
 	{
 		$manifest = json_decode(file_get_contents(self::$manifest_file));
 
-		return substr($url ? self::$assets_url : self::$assets_path, 0, -1) . $manifest->{$file};
+		$asset = gettype($manifest->{$file}->{$asset}) === "array" ?  $manifest->{$file}->{$asset}[0] : $manifest->{$file}->{$asset};
+
+		return substr($url ? self::$assets_url : self::$assets_path, 0, -1) . '/' . $asset;
 	}
 
 	public static function manifest_asset($file){

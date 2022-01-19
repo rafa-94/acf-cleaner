@@ -53,13 +53,13 @@ class orphans
 		return $parsed_data;
 	}
 
-	private static function get_orphan_metadata()
+	private static function get_orphan_metadata($limit = 50)
 	{
 		global $wpdb;
 
 		return "SELECT meta_id, meta_key, post_id FROM $wpdb->postmeta
 						LEFT JOIN $wpdb->posts ON $wpdb->posts.ID = $wpdb->postmeta.post_id
-						WHERE $wpdb->posts.ID IS NULL;";
+						WHERE $wpdb->posts.ID IS NULL LIMIT $limit;";
 	}
 
 	private static function delete_orphan_metadata($ids)
